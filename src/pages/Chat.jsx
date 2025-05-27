@@ -3,7 +3,8 @@ import Sidebar from "../components/Sidebar";
 import ChatArea from "../components/ChatArea";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
-const ENDPOINT = `${apiURL}/`;
+import apiURL from "../../utils";
+const ENDPOINT = apiURL;
 
 const Chat = () => {
   const [selectedGroup, setSelectedGroup] = useState(null);
